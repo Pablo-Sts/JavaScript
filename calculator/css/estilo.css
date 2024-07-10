@@ -1,0 +1,53 @@
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.calculadora{
+    display: grid;
+    width: 15em;
+    height: 22em;
+    background-color: var(--cor-calc);
+    border: 0.1em solid black;
+    gap: 0.4em;
+    padding-left: 0.4em;
+}
+
+.calculadora .visor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora .visor .texto{
+    display: flexbox;
+    flex-wrap: wrap;
+    height: 2.5em;
+    width: 17em;
+
+}
+
+.calculadora .teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.calculadora .teclado .botao{
+    width: 4em;
+    height: 4em;
+    margin-bottom: 0.3em;
+}
+
+.calculadora .teclado .botao.num{
+    background-color: var(--cor-nums);
+}
+
+.calculadora .teclado .botao.operador{
+    background-color: var(--cor-ops);
+}
+
+#igual{
+    background-color: var(--cor-igual);
+}
